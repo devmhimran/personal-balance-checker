@@ -9,10 +9,11 @@
     <title>Personal Balance Checker</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header class="text-center p-5">
         <h1 class="heading d-flex align-items-center justify-content-center">Personal Balance Checker <span><img src="./assets/img/icon-01.jpg" alt=""></span></h1>     
     </header>
-
+    <!-- Calculatiob Section -->
     <section class="calculation-section">
         <div class="container">
             <div class="row g-5">
@@ -22,10 +23,7 @@
                 <div class="calculation-section-right col-md-12 col-lg-6 col-sm-12 p-5">
                     <div class="all-details d-flex justify-content-center">
                         <div class="all-balance">
-                            <!-- <div id="invalid-message" class="alert alert-warning alert-dismissible fade show" role="alert">
-                                Holy guacamole! You should check in on some of those fields below.
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div> -->
+                            <!-- Income Detail Start -->
                             <div class="income-details pt-4">
                                 <div class="income-heading">
                                     <h3 class="text-center">Income</h3>                           
@@ -36,6 +34,8 @@
                                     <small id="income-input-message" class="invalid-message"></small>
                                 </div>
                             </div>
+                            <!-- Income Detail End -->
+                            <!-- Expense Detail Start -->
                             <div class="expense-details pt-4">
                                 <div class="expense-heading">
                                     <h3 class="text-center">Expense</h3>                           
@@ -57,6 +57,7 @@
                                 </div> 
                                 
                             </div>
+                            
                             <div class="expense-calculation-button pt-5 text-center">
                                 <a href="#" id="expense-button" class="expense-button">Calculate</a>
                             </div>
@@ -65,6 +66,8 @@
                                 <p id="total-balance" class="total-balance"></p>
                                 <small id="balance-message" class="balance-message"> </small>
                             </div>
+                            <!-- Expense Detail End -->
+                            <!-- Saving Detail Start -->
                             <div class="saving-section mt-5">
                                 <span>Save: </span>
                                 <input id="saving-input" class="input-field-saving" type="text">
@@ -77,6 +80,7 @@
                                 <p id="remaining-amount" class="remaining-amount"></p>
                                 <small id="saving-invalid-message" class="invalid-message"></small>
                             </div>
+                            <!-- Saving Detail End -->
                         </div>
                     </div>
                 </div>

@@ -1,22 +1,26 @@
+/* Font Start */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* Font End */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/* Heading Start */
 .heading{
     color: #31A5AC;
     font-weight: 700;
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
 }
+/* Heading End */
+/* Calculation Start */
 .calculation-section-left-img{
     width: 100%;
     height: 830px;
     object-fit: cover;
-    /* display: none; */
 }
 .calculation-section-right{
     background-color: #F8F8F8;
@@ -31,7 +35,6 @@
     background-color: #DCDCDC;
     padding: 5px 5px;
     margin-left: 5px;
-    /* width: 90%; */
 }
 .input-field-saving{
     padding: 8px 5px !important;
@@ -78,8 +81,8 @@
     text-align: center;
 
 }
-
-
+/* Calculation End */
+/* Responsive Start */
 @media only screen and (max-width: 992px) {
     .heading{
         font-size: 28px;
@@ -99,6 +102,4 @@
         font-size: 13px;
     }
 }
-@media only screen and (max-width: 662px) {
-
-}
+/* Responsive End */
