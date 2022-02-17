@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .heading{
     color: #31A5AC;
     font-weight: 700;
     font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
 }
 .calculation-section-left-img{
     width: 100%;
@@ -58,7 +59,11 @@
     text-decoration: none;
     border-radius: 5px;
 }
-.tota-expense, .total-balance{
+.total-expense,
+.total-balance,
+.saving-amount,
+.remaining-amount
+{
     font-weight: 600;
     font-size: 22px;
 }
