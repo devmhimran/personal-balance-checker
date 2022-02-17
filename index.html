@@ -5,11 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Personal Balance Checker</title>
 </head>
 <body>
-    
+    <header class="text-center p-5">
+        <h1 class="heading d-flex align-items-center justify-content-center">Personal Balance Checker <span><img src="./assets/img/icon-01.jpg" alt=""></span></h1>     
+    </header>
 
+    <section class="calculation-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="calculation-section-left col-md-12 col-lg-6 col-sm-12">
+                    <img class="calculation-section-left-img" src="./assets/img/money-balance-checker-01.jpg" alt="">
+                </div>
+                <div class="calculation-section-right col-md-12 col-lg-6 col-sm-12 p-5">
+                    <div class="all-details d-flex justify-content-center">
+                        <div class="all-balance">
+                            <div class="income-details pt-4">
+                                <div class="income-heading">
+                                    <h3 class="text-center">Income</h3>                           
+                                </div>
+                                <div class="income-input mt-3">
+                                    <span>Income: </span>
+                                    <input class="input-field" type="text">
+                                </div>
+                            </div>
+                            <div class="expense-details pt-4">
+                                <div class="expense-heading">
+                                    <h3 class="text-center">Income</h3>                           
+                                </div>
+                                <div class="expense-input mt-3 text-end">
+                                    <span>Food: </span>
+                                    <input class="input-field" type="text">
+                                </div>
+                                <div class="expense-input mt-3 text-end">
+                                    <span>Rent: </span>
+                                    <input class="input-field" type="text">
+                                </div>
+                                <div class="expense-input mt-3 text-end">
+                                    <span>Clothes: </span>
+                                    <input class="input-field" type="text">
+                                </div> 
+                                
+                            </div>
+                            <div class="expense-calculation-button pt-5 text-center">
+                                <a id="expense-button" class="expense-button">Calculate</a>
+                            </div>
+                            <div class="total-expense-detail text-center mt-5">
+                                <p class="tota-expense">Total Expenses: 5500 </p>
+                                <p class="total-balance">Balance: 4500</p>
+                            </div>
+                            <div class="saving-section mt-5">
+                                <span>Save: </span>
+                                <input class="input-field-saving" type="text">
+                                <span class="mx-2">%</span>
+                                <a id="expense-button" class="saving-button">Save</a>
+                            </div>
+                            <div class="saving-amount text-center mt-5">
+                                <p class="saving-amount">Saving Amount: 2000</p>
+                                <p>Remaining Balance: 2500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <script src="./assets/js/main.js"></script>
 </body>

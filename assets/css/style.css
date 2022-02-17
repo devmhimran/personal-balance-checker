@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.heading{
+    color: #31A5AC;
+    font-weight: 700;
+    font-size: 48px;
+}
+.calculation-section-left-img{
+    width: 100%;
+    height: 830px;
+    object-fit: cover;
+}
+.calculation-section-right{
+    background-color: #F8F8F8;
+}
+.income-input span{
+    font-weight: 400;
+    font-size: 18px;
+}
+.input-field,.input-field-saving{
+    outline: none;
+    border: none;
+    background-color: #DCDCDC;
+    padding: 5px 5px;
+    margin-left: 5px;
+    /* width: 90%; */
+}
+.input-field-saving{
+    padding: 8px 5px !important;
+    width: 100px;
+}
+.expense-button{
+    padding: 15px 40px;
+    background-color: #59A5FF;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.expense-button:hover,
+.saving-button:hover{
+    background-color: #fff;
+    color: #59A5FF;
+    border: 1px solid #59A5FF;
+    transition: 0.4s;
+}
+.saving-button{
+    padding: 12px 40px;
+    background-color: #59A5FF;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.tota-expense, .total-balance{
+    font-weight: 600;
+    font-size: 22px;
+}
