@@ -26,12 +26,17 @@ function showCalculation(outputId, expense){
     return outputText;
 }
 
+function expenseCalculation(food, rent, clothes){
+    const totalExpenseCalculation = food + rent + clothes;
+}
+
 document.getElementById('expense-button').addEventListener('click', function(){
     const income = inputValue('income-input', 'Income');
     const foodExpense = inputValue('food-input', 'Food expense');
     const rentExpense = inputValue('rent-input', 'Rent expense');
     const clothesExpense = inputValue('clothes-input', 'Clothes expense');
-    const totalExpense = foodExpense + rentExpense + clothesExpense;
+    // const totalExpense = expenseCalculation(foodExpense, rentExpense, clothesExpense);
+    const totalExpense = foodExpense + rentExpense + clothesExpense ;
     const balance = income - totalExpense;
     if( isNaN(foodExpense) || isNaN(rentExpense) || isNaN(clothesExpense) || isNaN(totalExpense)){
         const expenseOutput = showCalculation('total-expense', '');
@@ -51,3 +56,37 @@ document.getElementById('expense-button').addEventListener('click', function(){
     console.log('Total Expense',totalExpense);
 });
 
+document.getElementById('saving-button').addEventListener('click', function(){
+    const saving = inputValue('saving-input', 'Saving');
+    const income = inputValue('income-input', 'Income');
+    const foodExpense = inputValue('food-input', 'Food expense');
+    const rentExpense = inputValue('rent-input', 'Rent expense');
+    const clothesExpense = inputValue('clothes-input', 'Clothes expense');
+    const totalExpense = foodExpense + rentExpense + clothesExpense;
+    const balance = income - totalExpense;
+    const savingAmount = (income/100)*saving;
+    const remainingBalance = balance - savingAmount;
+
+    if( isNaN(savingAmount) ){
+        showCalculation('saving-amount', '');
+    }else{
+        showCalculation('saving-amount', 'Saving Amount: ' + savingAmount);
+    }
+
+    if( isNaN(remainingBalance) ){
+        showCalculation('remaining-amount', '');
+    }else if( balance < savingAmount){
+        showCalculation('remaining-amount', '');
+        showCalculation('saving-invalid-message', 'You are not eligible for savings!!!');
+    }else{
+        
+        showCalculation('remaining-amount', 'Remaining Balance: ' + remainingBalance);
+        showCalculation('saving-invalid-message', '');
+    }
+
+    // else if( balance < remainingBalance){
+    //     showCalculation('saving-amount', '');
+    //     showCalculation('balance-message','You are not eligible for savings!!!');
+    // }
+    console.log( typeof savingCalculation);
+});

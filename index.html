@@ -67,13 +67,15 @@
                             </div>
                             <div class="saving-section mt-5">
                                 <span>Save: </span>
-                                <input class="input-field-saving" type="text">
+                                <input id="saving-input" class="input-field-saving" type="text">
                                 <span class="mx-2">%</span>
                                 <a href="#" id="saving-button" class="saving-button">Save</a>
+                                <small id="saving-input-message" class="invalid-message"></small>
                             </div>
                             <div class="saving-amount text-center mt-5">
-                                <p class="saving-amount">Saving Amount: 2000</p>
-                                <p class="remaining-amount">Remaining Balance: 2500</p>
+                                <p id="saving-amount" class="saving-amount"></p>
+                                <p id="remaining-amount" class="remaining-amount"></p>
+                                <small id="saving-invalid-message" class="invalid-message"></small>
                             </div>
                         </div>
                     </div>
