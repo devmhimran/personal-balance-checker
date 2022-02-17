@@ -1,6 +1,7 @@
 
+
+// Getting input value
 function inputValue(inputId, invalidMessage){
-    
     const input = document.getElementById(inputId);
     const inputValue = input.value;
     const inputValueParse = parseFloat(inputValue);
@@ -15,11 +16,11 @@ function inputValue(inputId, invalidMessage){
     }else{
         document.getElementById(inputId+'-message').innerText = '';
         return inputValueParse;    
-    }
-    
+    }  
 }
 
-function outputCalculation(outputId, expense){
+
+function showCalculation(outputId, expense){
     const outputText = document.getElementById(outputId);
     outputText.innerText = expense;
     return outputText;
@@ -33,23 +34,20 @@ document.getElementById('expense-button').addEventListener('click', function(){
     const totalExpense = foodExpense + rentExpense + clothesExpense;
     const balance = income - totalExpense;
     if( isNaN(foodExpense) || isNaN(rentExpense) || isNaN(clothesExpense) || isNaN(totalExpense)){
-        const expenseOutput = outputCalculation('total-expense', '');
+        const expenseOutput = showCalculation('total-expense', '');
     }else{
-        const expenseOutput = outputCalculation('total-expense','Total Expenses: '+totalExpense);
+        const expenseOutput = showCalculation('total-expense','Total Expenses: '+totalExpense);
     }
     if( isNaN(income) || isNaN(totalExpense)){
-        const balanceOutput = outputCalculation('total-balance', '');
+        showCalculation('total-balance', '');
     }else if( balance < 0 ){
-        const balanceOutput = outputCalculation('balance-message','Insufficient Balance your expense is too much!!!');
+        showCalculation('total-balance', '');
+        showCalculation('balance-message','Insufficient Balance, Your expense is too much!!!');
         console.log(balanceOutput);
     }else{
-        const balanceOutput = outputCalculation('total-balance','Balance: '+balance);
+        showCalculation('total-balance','Balance: '+balance);
+        showCalculation('balance-message','');
     }
-    // console.log('income',income);
-    // console.log('food',foodExpense);
-    // console.log('rent',rentExpense);
-    // console.log('clothesExpense',rentExpense);
     console.log('Total Expense',totalExpense);
-   
 });
 
