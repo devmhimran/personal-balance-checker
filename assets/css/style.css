@@ -54,6 +54,7 @@
     color: #59A5FF;
     border: 1px solid #59A5FF;
     transition: 0.4s;
+    cursor: pointer;
 }
 .saving-button{
     padding: 12px 40px;

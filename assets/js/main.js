@@ -71,7 +71,7 @@ document.getElementById('saving-button').addEventListener('click', function(){
     if( isNaN(savingAmount) ){
         showCalculation('saving-amount', '');
     }else{
-        showCalculation('saving-amount', 'Saving Amount: ' + savingAmount);
+        showCalculation('saving-amount', 'Saving Amount: ' + savingAmount.toFixed(2));
     }
 
     // Check Nan Condition
@@ -81,7 +81,7 @@ document.getElementById('saving-button').addEventListener('click', function(){
         showCalculation('remaining-amount', '');
         showCalculation('saving-invalid-message', 'You are not eligible for savings !!!');
     }else{    
-        showCalculation('remaining-amount', 'Remaining Balance: ' + remainingBalance);
+        showCalculation('remaining-amount', 'Remaining Balance: ' + remainingBalance.toFixed(2));
         showCalculation('saving-invalid-message', '');
     }
 });
