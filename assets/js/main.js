@@ -29,9 +29,9 @@ function showCalculation(outputId, expense){
 // Expense Button Action
 document.getElementById('expense-button').addEventListener('click', function(){
     const income = inputValue('income-input', 'Income');
-    const foodExpense = inputValue('food-input', 'Food expense');
-    const rentExpense = inputValue('rent-input', 'Rent expense');
-    const clothesExpense = inputValue('clothes-input', 'Clothes expense');
+    const foodExpense = inputValue('food-input', 'Food Expense');
+    const rentExpense = inputValue('rent-input', 'Rent Expense');
+    const clothesExpense = inputValue('clothes-input', 'Clothes Expense');
     const totalExpense = foodExpense + rentExpense + clothesExpense ;
     const balance = income - totalExpense;
 
@@ -46,7 +46,7 @@ document.getElementById('expense-button').addEventListener('click', function(){
         showCalculation('total-balance', '');
     }else if( balance < 0 ){
         showCalculation('total-balance', '');
-        showCalculation('balance-message','Insufficient Balance, Your expense is too much!!!');
+        showCalculation('balance-message','Insufficient Balance, Your expense is too much !!!');
     }else{
         showCalculation('total-balance','Balance: '+balance);
         showCalculation('balance-message','');
@@ -79,7 +79,7 @@ document.getElementById('saving-button').addEventListener('click', function(){
         showCalculation('remaining-amount', '');
     }else if( balance < savingAmount){
         showCalculation('remaining-amount', '');
-        showCalculation('saving-invalid-message', 'You are not eligible for savings!!!');
+        showCalculation('saving-invalid-message', 'You are not eligible for savings !!!');
     }else{    
         showCalculation('remaining-amount', 'Remaining Balance: ' + remainingBalance);
         showCalculation('saving-invalid-message', '');
