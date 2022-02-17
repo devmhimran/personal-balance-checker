@@ -79,7 +79,7 @@ document.getElementById('saving-button').addEventListener('click', function(){
         showCalculation('remaining-amount', '');
     }else if( balance < savingAmount){
         showCalculation('remaining-amount', '');
-        showCalculation('saving-invalid-message', 'You are not eligible for savings !!!');
+        showCalculation('saving-invalid-message', 'Balance is not eligible for savings !!!');
     }else{    
         showCalculation('remaining-amount', 'Remaining Balance: ' + remainingBalance.toFixed(2));
         showCalculation('saving-invalid-message', '');
